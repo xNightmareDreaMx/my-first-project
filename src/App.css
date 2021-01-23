@@ -1,0 +1,50 @@
+.app-walpper{
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  box-sizing: border-box;
+  width: 70vw ;
+  height: 65vh;
+  grid-template-columns:
+   [start] minmax(auto,min-content)
+   [center] auto
+   [end]minmax(auto,min-content);
+   
+
+  grid-template-columns: 200px 1fr;
+   grid-template-areas: 
+ " .header"
+ "sidebar main"
+ "sidebar footer";
+ 
+}
+
+
+
+
+.header{
+grid-area: header;
+ background-color: forestgreen ;
+}
+.header img {
+  width: 150px;
+}
+
+.nav {
+grid-row: sidebar; 
+background-color: forestgreen;
+}
+
+.Footer {
+  grid-column: footer;
+ background-color: dodgerblue ;
+}
+
+.Profile {
+grid-column: main;
+}
+
+.nav,
+main {
+  min-height: 300px;
+}
